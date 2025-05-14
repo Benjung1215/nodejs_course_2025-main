@@ -11,7 +11,7 @@ const requestTimer = (req, res, next) => {
     const duration = endTime - startTime;
 
     const log = {
-      timestamp: new Date().toISOString,
+      timestamp: new Date().toISOString(),
       method: req.method,
       url: req.url,
       statusCode: res.statusCode,
