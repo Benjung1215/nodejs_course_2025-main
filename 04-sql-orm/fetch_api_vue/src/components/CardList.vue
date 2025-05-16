@@ -21,14 +21,14 @@ const emit = defineEmits(['edit', 'delete'])
 
       <!-- 英雄卡片內容 -->
       <template v-if="type === 'hero'">
-        <p>等級: {{ item.hero_level }}</p>
-        <p>排名: {{ item.hero_rank }}</p>
+        <p>等級: {{ item.heroLevel }}</p>
+        <p>排名: {{ item.heroRank }}</p>
       </template>
 
       <!-- 怪物卡片內容 -->
       <template v-if="type === 'monster'">
-        <p>危險等級: {{ item.danger_level }}</p>
-        <p v-if="item.kill_by">擊殺者: {{ item.kill_by }}</p>
+        <p>危險等級: {{ item.dangerLevel }}</p>
+        <p v-if="item.killBy">擊殺者: {{ item.killBy }}</p>
       </template>
 
       <div class="mt-4 space-x-2">

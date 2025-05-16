@@ -13,7 +13,7 @@ app.get("/api/messages", (req, res) => {
 app.post("/api/messages", (req, res) => {
   const { content, author } = req.body;
 
-  const mewMsg = {
+  const newMsg = {
     id: Date.now().toString(),
     content,
     author,

@@ -98,7 +98,9 @@ const clearMessage = () => {
 }
 
 onMounted(async () => {
-  await Promise.all([fetchHeroes(), fetchMonsters()])
+  // await Promise.all([fetchHeroes(), fetchMonsters()])
+  await fetchHeroes()
+  await fetchMonsters()
 })
 </script>
 

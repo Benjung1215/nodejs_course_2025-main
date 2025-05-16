@@ -42,11 +42,11 @@ const formData = computed({
           </div>
           <div>
             <label class="block mb-1">英雄等級</label>
-            <input v-model="formData.hero_level" class="w-full border rounded p-2">
+            <input v-model="formData.heroLevel" class="w-full border rounded p-2">
           </div>
           <div>
             <label class="block mb-1">英雄排名</label>
-            <input v-model="formData.hero_rank" class="w-full border rounded p-2">
+            <input v-model="formData.heroRank" class="w-full border rounded p-2">
           </div>
           <div>
             <label class="block mb-1">描述</label>
@@ -65,7 +65,7 @@ const formData = computed({
           </div>
           <div>
             <label class="block mb-1">危險等級</label>
-            <input v-model="formData.danger_level" class="w-full border rounded p-2">
+            <input v-model="formData.dangerLevel" class="w-full border rounded p-2">
           </div>
           <div>
             <label class="block mb-1">描述</label>
@@ -73,7 +73,7 @@ const formData = computed({
           </div>
           <div>
             <label class="block mb-1">擊殺者</label>
-            <input v-model="formData.kill_by" class="w-full border rounded p-2">
+            <input v-model="formData.killBy" class="w-full border rounded p-2">
           </div>
         </div>
       </template>
